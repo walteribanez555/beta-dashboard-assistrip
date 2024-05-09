@@ -1,0 +1,108 @@
+
+
+.calendar {
+  width: 280px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: var(--body-bg);
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  width: 30px;
+  height: 40px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
+
+.monthYear{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.dates{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.date{
+  text-align: center;
+  padding: 5px;
+  color: #999FA6;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+
+.days{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 5px;
+}
+
+.day{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 30px;
+  font-size: 12px;
+  height: 40px;
+  transition: 0.2s;
+
+}
+
+
+.date:hover{
+  background-color: gainsboro;
+}
+
+
+.date.limit{
+  /* border-radius: 8px; */
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.date.range{
+  background-color: var(--main-color);
+  /* border-radius: 8px; */
+  color: white;
+}
+
+
+.date.limit.start{
+  border-radius: 8px 0px 0px 8px;
+}
+
+.date.limit.end{
+  border-radius: 0px 8px 8px 0px;
+}
+

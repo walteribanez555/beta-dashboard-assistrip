@@ -1,0 +1,34 @@
+<div class="component-data">
+  <div class="range-calendar">
+    <input-date [onSelectInit]="onStartObservable" (onSelectDate)="onStartSelected($event)" [onStart]="onStartDate!"
+      [onFinish]="onFinishDate!"></input-date>
+    <input-date [onSelectFinish]="onFinishObservable" (onSelectDate)="onFinishSelected($event)"
+      [onFinish]="onFinishDate!" [onStart]="onStartDate!"> </input-date>
+  </div>
+
+
+  <ng-container *ngIf="onFinishDate && onStartDate">
+    <span>Fechas seleccionadas</span>
+
+    <div class="list-dates">
+      <div class="item-date">
+        <span class="desc" >Fecha Inicial</span>
+        <span>{{onStartDate.toISOString().split('T')[0]}}</span>
+      </div>
+
+      <div class="item-date">
+        <span class="desc">Fecha Final</span>
+        <span>{{onFinishDate.toISOString().split('T')[0]}}</span>
+      </div>
+
+      <div class="item-date">
+        <span class="desc">Dias</span>
+        <span>{{daysDifference}}</span>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngIf="!onFinishDate || !onStartDate" >
+    <span>Seleccione ambas fechas</span>
+
+  </ng-container>
+</div>

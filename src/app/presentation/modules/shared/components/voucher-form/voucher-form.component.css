@@ -1,0 +1,19 @@
+.voucher-form{
+  width: 100%;
+  padding: 10px;
+  border: 3px solid gainsboro;
+  border-radius: 8px;
+
+}
+
+.voucher-form--title{
+  font-size: 18px;
+  font-weight: bold;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.voucher-form--title hr {
+  width: 100%;
+  border: 1px solid gainsboro;
+}

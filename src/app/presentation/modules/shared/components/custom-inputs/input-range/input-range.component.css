@@ -1,0 +1,57 @@
+.range-calendar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.component-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.list-dates{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.item-date{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid   gainsboro;
+  border-radius: 8px;
+  padding: 10px 20px;
+  width: 45%;
+}
+
+.item-date .desc{
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+  .list-dates{
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+
+  .item-date{
+    width: 100%;
+  }
+
+}

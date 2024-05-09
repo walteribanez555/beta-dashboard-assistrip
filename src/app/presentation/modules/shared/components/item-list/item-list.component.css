@@ -1,0 +1,17 @@
+.item-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  /* border-radius: 4px; */
+  font-size: 12px;
+  outline: none;
+  font-weight: bold;
+}
+
+.item-list:hover{
+  background-color: gainsboro;
+}

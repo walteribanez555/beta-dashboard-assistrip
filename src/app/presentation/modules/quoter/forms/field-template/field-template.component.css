@@ -1,0 +1,30 @@
+
+.field{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.title{
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+
+
+  .field * {
+    width: 100%;
+  }
+
+  #item{
+    width: 100%;
+  }
+
+
+}
+

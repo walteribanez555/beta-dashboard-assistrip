@@ -1,0 +1,91 @@
+.sub-menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.sub-menu-link-data{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+.sub-menu-link span {
+  font-size: 22px;
+}
+
+.sub-menu-link:hover i {
+  transform: translateX(0px);
+}
+
+
+.sub-menu-link i {
+  margin: 0px 10px;
+}
+
+
+
+
+.childs{
+  padding-left: 10px;
+  width: 100%;
+}
+
+
+span{
+  transition: 0.3s all ease-in-out;
+}
+
+span.rotate{
+  rotate: 90deg;
+  transition: 0.3s all ease-in-out;
+
+}
+
+
+a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+
+.sub-menu-link-data:hover{
+  font-weight: 600;
+  color: var(--main-color);
+  background-color: gainsboro;
+}
+
+.sub-menu-link-data.active,
+.sub-menu-link-data:hover i {
+  color: var(--main-color);
+}
+
+.sub-menu-link-data.active,
+.sub-menu-link-data:hover span {
+  color: var(--main-color);
+}
+
+.sub-menu-link-data.active i,
+.sub-menu-link-data.active span,
+.sub-menu-link-data.active{
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  color: white;
+}
+
+
+

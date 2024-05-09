@@ -1,0 +1,20 @@
+<header>
+  <ul  class="list-item">
+    <li>Assistrip</li>
+  </ul>
+  <ul *ngIf="!isLogged" class="list-item">
+    <li>Idiomas</li>
+  </ul>
+  <ul *ngIf="!isLogged" class="list-item">
+    <button routerLink="../auth/login">
+      <span>Mi asssitrip</span>
+    </button>
+  </ul>
+
+
+  <ul *ngIf="isLogged" class="list-item">
+    <button>
+      <span>Cerrar sesion</span>
+    </button>
+  </ul>
+</header>

@@ -1,0 +1,29 @@
+<div class="calendar ">
+  <div class="header">
+    <button class="prev" (click)="onPrev()">
+      <img src="assets/icons/arrow_back.svg">
+    </button>
+    <div class="monthYear">
+      {{monthYear}}
+    </div>
+    <button class="next" (click)="onNext()">
+      <img src="assets/icons/arrow_next.svg">
+    </button>
+  </div>
+
+  <div class="days">
+    <div class="day">Mon</div>
+    <div class="day">Tue</div>
+    <div class="day">Wed</div>
+    <div class="day">Thu</div>
+    <div class="day">Fri</div>
+    <div class="day">Sat</div>
+    <div class="day">Sun</div>
+  </div>
+
+  <div class="dates">
+    <div class="date" *ngFor="let day of days, let i = index" (click)="onClickChild(day, i)" [ngClass]="onDate(day, i)">
+      {{day}}</div>
+  </div>
+
+</div>

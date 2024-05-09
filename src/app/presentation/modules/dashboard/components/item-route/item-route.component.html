@@ -1,0 +1,18 @@
+<div [routerLink]="itemRoute.route" class="sub-menu-link">
+  <a  class="sub-menu-link-data" [routerLinkActive]="'active'" *ngIf="itemRoute.route; else itemMenu " (click)="toggleItemMenu()" [routerLink]="itemRoute.route">
+    <i [classList]="itemRoute.icon"></i>
+    <p>{{itemRoute.title}}</p>
+    <span [class.rotate]="itemRoute.onDisplay" >></span>
+  </a>
+  <ng-template #itemMenu >
+    <div (click)="onDisplayItems()" class="sub-menu-link-data" >
+      <i [classList]="itemRoute.icon"></i>
+      <p>{{itemRoute.title}}</p>
+      <span   [class.rotate]="itemRoute.onDisplay" >></span>
+    </div>
+  </ng-template>
+
+  <div class="childs"   *ngIf="itemRoute.onDisplay" >
+    <item-route *ngFor="let item of itemRoute.childrens"  [itemRoute]="item"  (onToggle)="toggleItemMenu()" ></item-route>
+  </div>
+</div>

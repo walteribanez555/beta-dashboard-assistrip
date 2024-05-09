@@ -1,0 +1,43 @@
+.quote {
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.left,
+.right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .top,
+.right .top {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+}
+
+@media (max-width: 768px) {
+  .quote {
+    flex-direction: column-reverse;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+  }
+}

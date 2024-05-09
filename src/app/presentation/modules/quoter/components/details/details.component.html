@@ -1,0 +1,13 @@
+<div class="details-multistep">
+  <span class="title title--secondary">
+    Cotiza tu Assistrip
+  </span>
+  <ul class="steps-details">
+
+    <li>
+      <step-item  *ngFor="let item of componentsForm; let  i = index"  [step]="item" [pos]="i + 1" (onSelectItem)="onSelectItem($event)" ></step-item>
+
+    </li>
+
+  </ul>
+</div>

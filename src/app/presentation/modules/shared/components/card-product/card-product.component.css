@@ -1,0 +1,102 @@
+.item-card{
+  /* padding: 20px; */
+  border: 1px solid gainsboro;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 320px;
+}
+
+.item-card * {
+  padding: 10px;
+}
+
+.item-card .content{
+  padding: 0px 10px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+
+}
+
+.list-actions{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.list-actions button{
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--main-color-secondary);
+  color: white;
+  cursor: pointer;
+}
+
+.list-actions button:hover{
+  background-color: var(--secondary-color);
+}
+
+.content hr{
+  width: 100%;
+  border: 1px solid var(--text-color);
+  padding: 0px;
+}
+
+
+
+.pricing{
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.pricing.sec-color{
+  color: var(--secondary-color);
+}
+
+.top{
+  color: white;
+  background-color: var(--secondary-color);
+  border-radius: 8px 8px 0px 0px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+img {
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+@media (max-width:768px) {
+  .item-card{
+
+    max-width: 100%;
+  }
+
+  .item-card p {
+    font-size: 12px;
+  }
+
+  .item-card .content{
+    /* padding: 10px; */
+  }
+  img {
+    display: none;
+  }
+
+
+}

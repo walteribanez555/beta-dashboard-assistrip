@@ -1,0 +1,30 @@
+<div class="step-form">
+
+
+
+  <div class="form">
+    <span>
+      Paso {{step +1}}
+    </span>
+    <span class="title">
+      {{data.title}}
+    </span>
+    <div class="list-control">
+      <field-template  *ngFor="let field of fields"  [dynamicField]="field" ></field-template>
+    </div>
+
+
+  </div>
+
+  <div class="actions">
+    <button  class="button--default"  (click)="onPrev()">
+      Previo
+    </button>
+    <button class="button--bg-primary"  (click)="onNext()">
+      Continuar
+    </button>
+
+  </div>
+
+
+</div>

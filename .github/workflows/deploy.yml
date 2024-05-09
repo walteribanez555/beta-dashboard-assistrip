@@ -1,0 +1,28 @@
+name: S3 CI CD pipeline to upload web page
+run-name: ${{ github.actor }} has triggered the pipeline
+
+on:
+  push:
+    branches:
+      - 'main'
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_S3_BUCKET : ${{ secrets.AWS_S3_BUCKET }}
+  AWS_REGION : 'us-east-1'
+  SOURCE_DIR : './dist/cotizador/browser'
+
+
+
+jobs:
+  build-infra:
+    name: redcard-quoter-ci-cd
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set up Jarvis
+        uses: jakejarvis/s3-sync-action@master
+        with:
+            args: --acl public-read --follow-symlinks --delete

@@ -1,0 +1,83 @@
+
+
+
+nav {
+  background-color: white;
+  border: 1px solid gainsboro;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+button {
+  border: 1px solid gainsboro;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+}
+
+button i {
+  margin-right: 10px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+img {
+  object-fit: fill;
+  width: 100%;
+  height: calc(var(--main-header-height) - 40px);
+  position: relative;
+}
+
+
+@media (max-width: 768px) {
+  button span {
+    display: none;
+  }
+
+  button i {
+    margin: 0;
+  }
+
+  nav {
+    padding: 10px 5px;
+  }
+
+  .sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  img {
+    height: calc(var(--main-header-height) - 30px);
+  }
+
+}

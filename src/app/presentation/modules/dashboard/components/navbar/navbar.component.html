@@ -1,0 +1,37 @@
+<nav>
+  <!-- <img src="images/logo.png" class="logo"> -->
+
+  <div class="navbar-left">
+    <button (click)="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+      <span style="margin: 0px 10px;">Menu</span>
+    </button>
+
+    <ul>
+      <li>
+        <img src="assets/svg/logo_img.png" alt="">
+      </li>
+    </ul>
+
+
+    <ng-container *ngIf="isOpenMenu" >
+      <sidebar  (onToggleMenu)="toggleMenu()"  ></sidebar>
+
+    </ng-container>
+
+  </div>
+
+  <ul>
+    <li>
+          <button>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Cerrar Session</span>
+          </button>
+    </li>
+  </ul>
+
+
+
+
+
+</nav>
