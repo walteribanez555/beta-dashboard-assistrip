@@ -11,7 +11,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   AWS_S3_BUCKET : ${{ secrets.AWS_S3_BUCKET }}
   AWS_REGION : 'us-east-1'
-  SOURCE_DIR : './dist/cotizador/browser'
+  SOURCE_DIR : './dist/dashboard/browser'
 
 
 
