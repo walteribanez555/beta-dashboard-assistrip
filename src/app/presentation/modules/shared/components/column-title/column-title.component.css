@@ -1,0 +1,11 @@
+.column-title{
+  padding: 10px 0px;
+  width: 120px;
+  font-size: 16px;
+}
+
+.column-title hr{
+  width: 100%;
+  border: 1px solid gainsboro;
+  margin: 10px 0px;
+}

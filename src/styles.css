@@ -399,8 +399,14 @@ voucher-form{
   margin: 20px;
   border-radius: 8px;
   display: grid;
-  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr; */
   padding-left: 100px;
+  justify-content: center;
+}
+
+
+.fr-1{
+  grid-template-columns: 1fr;
 }
 
 
