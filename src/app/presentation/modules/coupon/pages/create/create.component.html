@@ -1,6 +1,83 @@
 <div class="data fr-1">
   <div class="data-title">
-    <span>Crear Nuevo Cupon</span>
+    <span>Crear nuevo Cupon</span>
+  </div>
+
+  <div class="rol-form">
+
+
+    <div class="list-fields">
+      <div class="field field--row field--border-none p-0">
+        <div class="field  field--border-none field-50">
+          <div class="field-title">
+            <span>Nombre del Cupon</span>
+          </div>
+          <input type="text"  placeholder="Nombre del Cupon aquí">
+        </div>
+        <div class="field field--border-none field-50">
+
+
+
+        </div>
+
+      </div>
+
+      <div class="field field--row field--border-none p-0 field-50">
+        <div class="field  field--border-none field-50">
+          <div class="field-title">
+            <span>Tipo de Monto</span>
+          </div>
+          <input-value [data]="typeValues"  [placeholder]="'Seleccione tipo valor'" [formControl]="itemFormControl" ></input-value>
+        </div>
+        <div class="field  field--border-none field-50">
+          <div class="field-title">
+            <span>Monto o Valor</span>
+          </div>
+          <input type="text"  placeholder="100">
+        </div>
+      </div>
+
+      <div class="field field--row field--border-none p-0 field-50">
+        <div class="field  field--border-none field-50">
+          <div class="field-title">
+            <span>Fecha de Inicio</span>
+          </div>
+          <input type="date"  placeholder="Fecha Input">
+        </div>
+        <div class="field  field--border-none field-50">
+          <div class="field-title">
+            <span>Fecha Final</span>
+          </div>
+          <input type="date"  placeholder="Fecha Input">
+        </div>
+      </div>
+
+      <div class="field field--row field--border-none p-0 field-50">
+        <div class="field  field--border-none ">
+          <div class="field-title">
+            <span>Politicas de Cupon</span>
+          </div>
+          <input-code></input-code>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="list-fields">
+      <div class="field field--border-none">
+        <div class="details">
+          <span>Acciones</span>
+        </div>
+      </div>
+      <div class="field field--border-none">
+        <button>Crear</button>
+        <button>Ir al listado</button>
+      </div>
+    </div>
+
   </div>
 
 </div>

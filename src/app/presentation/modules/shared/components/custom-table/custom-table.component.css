@@ -62,6 +62,14 @@ button.btn-filter{
   color: white;
 }
 
+button.btn-export{
+  background-color: #63BE7B;
+  color: white;
+}
+
+button.btn-export:hover{
+  background-color: #3e754d;
+}
 
 .custom-table{
   width: fit-content;
@@ -119,6 +127,10 @@ button.btn-filter{
     align-items: center;
     justify-content: space-evenly;
     padding: 10px 40px;
+  }
+
+  .container-table{
+    padding: 20px 0px;
   }
 
 }

@@ -1,0 +1,64 @@
+button{
+  width: 100%;
+}
+
+
+.popup-action{
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.expand-actions{
+  font-size: 12px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+
+}
+
+.expand-description{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  background-color: gainsboro;
+  padding: 10px 20px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.expand-data{
+  height: fit-content;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  animation:  hiddelist 0.5s forwards;
+  width: 100%;
+  /* animation: displaylistWithOutGlutter  0.5s forwards; */
+}
+
+.expand-data.visible{
+  display: flex;
+  animation: displaylistWithOutGlutter  0.5s forwards;
+
+}
+
+
+.expand-content{
+  /* border: 1px solid gainsboro; */
+  /* border-radius: 8px; */
+  /* padding: 10px; */
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+

@@ -1,0 +1,23 @@
+<div class="select-country" [class.active]="isToggle">
+  <div class="select-btn" (click)="updateToggle()">
+    <span>{{searchInput}}</span>
+    <!-- <i class="uil uil-angle-down"></i> -->
+    <i class="fa-solid fa-chevron-down fa-2xs"></i>
+  </div>
+
+  <ng-container *ngIf="isToggle">
+    <div class="content">
+      <div class="search">
+        <i class="uil uil-search"></i>
+        <input  spellcheck="false" type="text" placeholder="Search"
+          (input)="searchTerm($event)" [(ngModel)]="searchText">
+      </div>
+      <listview [items]="data" [isHidden]="true" [onSelectItem]="onSelectItem" [filterListener]="searchTerm$">
+      </listview>
+    </div>
+
+
+  </ng-container>
+
+
+</div>

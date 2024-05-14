@@ -2,12 +2,12 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-tag',
+  selector: 'tag',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  template: `<p>tag works!</p>`,
+  templateUrl : './tag.component.html',
   styleUrl: './tag.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

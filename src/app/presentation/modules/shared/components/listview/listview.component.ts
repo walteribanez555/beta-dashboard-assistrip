@@ -19,6 +19,7 @@ import { Observable } from 'rxjs';
 })
 export class ListviewComponent implements ListView, OnInit {
   ngOnInit(): void {
+    console.log(this.items);
     this.filteredItems = this.items;
 
     this.filterListener?.subscribe({

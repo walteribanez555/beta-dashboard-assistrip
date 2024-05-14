@@ -1,0 +1,26 @@
+<div class="popup-action">
+  <div class="popup-description">
+    ¡Ups!, hubo un problema con la accion.
+  </div>
+  <div class="popup-icon">
+    <img src="assets/svg/release_alert.svg" alt="">
+  </div>
+  <div class="popup-actions">
+    <button class="accept" >Aceptar</button>
+  </div>
+  <div class="expand-actions">
+    <button class="expand-description" (click)="onToggleButton()" >
+      <span>Ver Detalles</span>
+      <img src="assets/svg/arrow_down.svg" alt="">
+    </button>
+
+    <div class="expand-data" [class.visible]="onToggleExpand" >
+      <div class="expand-content">
+        <span>Enviar estos detalles al departamento de Sistemas en caso de ser necesario.</span>
+        <error-log></error-log>
+      </div>
+    </div>
+
+  </div>
+</div>
+

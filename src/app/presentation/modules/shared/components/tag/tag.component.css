@@ -1,0 +1,21 @@
+.tag{
+  padding: 10px 40px 10px 20px;
+  font-size: 14px;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  font-weight: bold;
+  color: var(--main-color);
+  position: relative;
+}
+
+
+
+.action-tag{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 2px 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-color);
+}

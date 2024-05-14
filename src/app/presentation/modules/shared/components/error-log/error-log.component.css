@@ -1,0 +1,21 @@
+.error-log{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.error-log .time{
+  font-size: 10px;
+  color: var(--deny-hov);
+}
+
+
+.list-fields .field{
+  align-items: flex-start;
+  /* color: var(--deny-hov); */
+}

@@ -20,7 +20,6 @@ import { CustomItemComponent } from '../custom-item/custom-item.component';
 })
 export class CustomTableComponent implements OnInit, CustomTable  {
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
   @Input()  columnTitles!: ColumnTitle[];
   @Input()  customItems!: CustomItem[];
